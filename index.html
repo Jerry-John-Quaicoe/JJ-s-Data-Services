@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damson's Data Hub | Affordable Internet</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --telecel-red: #e60000;
+            --mtn-yellow: #ffcc00;
+            --airteltigo-blue: #005eb8;
+            --dark-blue: #003366;
+            --whatsapp-green: #25D366;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f4f7f9;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--dark-blue);
+            text-transform: uppercase;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #003366 0%, #005eb8 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: -40px auto 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .pricing-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            background: white;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover { transform: translateY(-10px); }
+
+        .card-header {
+            padding: 25px;
+            text-align: center;
+            color: white;
+            font-weight: 800;
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+
+        .telecel { background: var(--telecel-red); }
+        .mtn { background: var(--mtn-yellow); color: #000; }
+        .airteltigo { background: var(--airteltigo-blue); }
+
+        .price-list { flex-grow: 1; }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 25px;
+            border-bottom: 1px solid #eee;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .price-item:nth-child(even) { background: #fdfdfd; }
+
+        .buy-btn {
+            display: block;
+            text-align: center;
+            padding: 18px;
+            margin: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #28a745;
+            color: white;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+        }
+
+        .buy-btn:hover { background: #218838; transform: scale(1.02); }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp-green);
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            padding: 15px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 2px 5px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .contact-bar {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 5px solid var(--mtn-yellow);
+        }
+
+        .phone-number {
+            font-size: 28px;
+            color: var(--dark-blue);
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            .container { grid-template-columns: 1fr; }
+            .whatsapp-float { bottom: 20px; right: 20px; padding: 12px 20px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">DAMSON'S <span style="color:var(--airteltigo-blue)">DATA</span> <span style="color:var(--telecel-red)">HUB</span></div>
+</header>
+
+<div class="hero">
+    <h1>Your Internet Lifeline</h1>
+    <p>Fast, reliable, and affordable data for all networks.</p>
+</div>
+
+<div class="container">
+    <div class="pricing-card">
+        <div class="card-header mtn">MTN</div>
+        <div class="price-list">
+            <div class="price-item"><span>1GB</span> <span>₵10.00</span></div>
+            <div class="price-item"><span>2GB</span> <span>₵12.00</span></div>
+            <div class="price-item"><span>5GB</span> <span>₵27.50</span></div>
+            <div class="price-item"><span>10GB</span> <span>₵50.00</span></div>
+        </div>
+        <a href="https://www.datatrade.store/damson_s_data_hub_" class="buy-btn">ORDER MTN DATA</a>
+    </div>
+
+    <div class="pricing-card">
+        <div class="card-header telecel">Telecel</div>
+        <div class="price-list">
+            <div class="price-item"><span>5GB</span> <span>₵32.00</span></div>
+            <div class="price-item"><span>10GB</span> <span>₵47.00</span></div>
+            <div class="price-item"><span>20GB</span> <span>₵85.00</span></div>
+            <div class="price-item"><span>50GB</span> <span>₵190.00</span></div>
+        </div>
+        <a href="https://www.datatrade.store/damson_s_data_hub_" class="buy-btn">ORDER TELECEL DATA</a>
+    </div>
+
+    <div class="pricing-card">
+        <div class="card-header airteltigo">AirtelTigo</div>
+        <div class="price-list">
+            <div class="price-item"><span>1GB</span> <span>₵6.00</span></div>
+            <div class="price-item"><span>2GB</span> <span>₵11.00</span></div>
+            <div class="price-item"><span>5GB</span> <span>₵24.00</span></div>
+            <div class="price-item"><span>10GB</span> <span>₵48.00</span></div>
+        </div>
+        <a href="https://www.datatrade.store/damson_s_data_hub_" class="buy-btn">ORDER AIRTELTIGO DATA</a>
+    </div>
+</div>
+
+<div class="contact-bar">
+    <p><strong>WE OFFER AFFORDABLE DATA SERVICES</strong></p>
+    <div class="phone-number" onclick="copyToClipboard('0595759185')">
+        <i class="fas fa-phone-alt"></i> 0595759185
+    </div>
+    <p><small>Available: 7:00 am – 8:30 pm</small></p>
+</div>
+
+<a href="https://wa.me/233595759185?text=Hello%20Damson,%20I%20want%20to%20buy%20data" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat with us
+</a>
+
+<script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text);
+        alert("Phone number copied to clipboard!");
+    }
+</script>
+
+</body>
+</html>
